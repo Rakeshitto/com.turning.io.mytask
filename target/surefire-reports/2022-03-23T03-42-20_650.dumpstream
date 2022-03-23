@@ -1,0 +1,1653 @@
+# Created on 2022-03-23T03:42:20.652
+org.aspectj.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 16
+
+# Created on 2022-03-23T03:42:20.652
+	at org.aspectj.apache.bcel.classfile.Constant.readConstant(Constant.java:133)
+
+# Created on 2022-03-23T03:42:20.653
+	at org.aspectj.apache.bcel.classfile.ConstantPool.<init>(ConstantPool.java:45)
+
+# Created on 2022-03-23T03:42:20.653
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:186)
+
+# Created on 2022-03-23T03:42:20.653
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+
+# Created on 2022-03-23T03:42:20.654
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+
+# Created on 2022-03-23T03:42:20.654
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:390)
+
+# Created on 2022-03-23T03:42:20.655
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+
+# Created on 2022-03-23T03:42:20.655
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+
+# Created on 2022-03-23T03:42:20.655
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:440)
+
+# Created on 2022-03-23T03:42:20.656
+	at org.aspectj.weaver.World.resolve(World.java:296)
+
+# Created on 2022-03-23T03:42:20.656
+	at org.aspectj.weaver.bcel.BcelWeaver.addLibraryAspect(BcelWeaver.java:160)
+
+# Created on 2022-03-23T03:42:20.656
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerAspects(ClassLoaderWeavingAdaptor.java:460)
+
+# Created on 2022-03-23T03:42:20.657
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerDefinitions(ClassLoaderWeavingAdaptor.java:288)
+
+# Created on 2022-03-23T03:42:20.657
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.initialize(ClassLoaderWeavingAdaptor.java:174)
+
+# Created on 2022-03-23T03:42:20.658
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.initialize(Aj.java:271)
+
+# Created on 2022-03-23T03:42:20.658
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.getWeavingAdaptor(Aj.java:276)
+
+# Created on 2022-03-23T03:42:20.659
+	at org.aspectj.weaver.loadtime.Aj$WeaverContainer.getWeaver(Aj.java:254)
+
+# Created on 2022-03-23T03:42:20.659
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:90)
+
+# Created on 2022-03-23T03:42:20.659
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2022-03-23T03:42:20.660
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+
+# Created on 2022-03-23T03:42:20.660
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2022-03-23T03:42:20.660
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+
+# Created on 2022-03-23T03:42:20.661
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2022-03-23T03:42:20.661
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+
+# Created on 2022-03-23T03:42:20.662
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+
+# Created on 2022-03-23T03:42:20.662
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+
+# Created on 2022-03-23T03:42:20.662
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+
+# Created on 2022-03-23T03:42:20.663
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+
+# Created on 2022-03-23T03:42:20.663
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+
+# Created on 2022-03-23T03:42:20.664
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+
+# Created on 2022-03-23T03:42:20.664
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+
+# Created on 2022-03-23T03:42:20.665
+	at java.base/java.lang.Class.forName0(Native Method)
+
+# Created on 2022-03-23T03:42:20.665
+	at java.base/java.lang.Class.forName(Class.java:467)
+
+# Created on 2022-03-23T03:42:20.666
+	at java.base/sun.launcher.LauncherHelper.loadMainClass(LauncherHelper.java:780)
+
+# Created on 2022-03-23T03:42:20.666
+	at java.base/sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:675)
+
+# Created on 2022-03-23T03:42:20.690
+Mar 23, 2022 3:42:20 AM org.aspectj.weaver.tools.Jdk14Trace error
+
+# Created on 2022-03-23T03:42:20.691
+SEVERE: register definition failed
+
+# Created on 2022-03-23T03:42:20.691
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'io.qameta.allure.aspects.StepsAspects': Invalid byte tag in constant pool: 16
+
+# Created on 2022-03-23T03:42:20.692
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+
+# Created on 2022-03-23T03:42:20.692
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+
+# Created on 2022-03-23T03:42:20.692
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+
+# Created on 2022-03-23T03:42:20.692
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:390)
+
+# Created on 2022-03-23T03:42:20.693
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+
+# Created on 2022-03-23T03:42:20.693
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+
+# Created on 2022-03-23T03:42:20.694
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:440)
+
+# Created on 2022-03-23T03:42:20.694
+	at org.aspectj.weaver.World.resolve(World.java:296)
+
+# Created on 2022-03-23T03:42:20.694
+	at org.aspectj.weaver.bcel.BcelWeaver.addLibraryAspect(BcelWeaver.java:160)
+
+# Created on 2022-03-23T03:42:20.695
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerAspects(ClassLoaderWeavingAdaptor.java:460)
+
+# Created on 2022-03-23T03:42:20.695
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerDefinitions(ClassLoaderWeavingAdaptor.java:288)
+
+# Created on 2022-03-23T03:42:20.696
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.initialize(ClassLoaderWeavingAdaptor.java:174)
+
+# Created on 2022-03-23T03:42:20.696
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.initialize(Aj.java:271)
+
+# Created on 2022-03-23T03:42:20.697
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.getWeavingAdaptor(Aj.java:276)
+
+# Created on 2022-03-23T03:42:20.697
+	at org.aspectj.weaver.loadtime.Aj$WeaverContainer.getWeaver(Aj.java:254)
+
+# Created on 2022-03-23T03:42:20.697
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:90)
+
+# Created on 2022-03-23T03:42:20.698
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2022-03-23T03:42:20.698
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+
+# Created on 2022-03-23T03:42:20.699
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2022-03-23T03:42:20.699
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+
+# Created on 2022-03-23T03:42:20.700
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2022-03-23T03:42:20.700
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+
+# Created on 2022-03-23T03:42:20.700
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+
+# Created on 2022-03-23T03:42:20.701
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+
+# Created on 2022-03-23T03:42:20.701
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+
+# Created on 2022-03-23T03:42:20.702
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+
+# Created on 2022-03-23T03:42:20.702
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+
+# Created on 2022-03-23T03:42:20.703
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+
+# Created on 2022-03-23T03:42:20.704
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+
+# Created on 2022-03-23T03:42:20.704
+	at java.base/java.lang.Class.forName0(Native Method)
+
+# Created on 2022-03-23T03:42:20.705
+	at java.base/java.lang.Class.forName(Class.java:467)
+
+# Created on 2022-03-23T03:42:20.705
+	at java.base/sun.launcher.LauncherHelper.loadMainClass(LauncherHelper.java:780)
+
+# Created on 2022-03-23T03:42:20.706
+	at java.base/sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:675)
+
+# Created on 2022-03-23T03:42:20.706
+
+
+# Created on 2022-03-23T03:42:23.831
+Mar 23, 2022 3:42:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+
+# Created on 2022-03-23T03:42:23.831
+INFO: Detected dialect: W3C
+
+# Created on 2022-03-23T03:42:45.266
+Mar 23, 2022 3:42:45 AM org.aspectj.weaver.tools.Jdk14Trace error
+
+# Created on 2022-03-23T03:42:45.268
+SEVERE: register definition failed
+
+# Created on 2022-03-23T03:42:45.269
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'io.qameta.allure.aspects.StepsAspects': Invalid byte tag in constant pool: 16
+
+# Created on 2022-03-23T03:42:45.270
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+
+# Created on 2022-03-23T03:42:45.271
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+
+# Created on 2022-03-23T03:42:45.272
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+
+# Created on 2022-03-23T03:42:45.273
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:390)
+
+# Created on 2022-03-23T03:42:45.273
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+
+# Created on 2022-03-23T03:42:45.274
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+
+# Created on 2022-03-23T03:42:45.274
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:440)
+
+# Created on 2022-03-23T03:42:45.276
+	at org.aspectj.weaver.World.resolve(World.java:296)
+
+# Created on 2022-03-23T03:42:45.276
+	at org.aspectj.weaver.bcel.BcelWeaver.addLibraryAspect(BcelWeaver.java:160)
+
+# Created on 2022-03-23T03:42:45.277
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerAspects(ClassLoaderWeavingAdaptor.java:460)
+
+# Created on 2022-03-23T03:42:45.277
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerDefinitions(ClassLoaderWeavingAdaptor.java:288)
+
+# Created on 2022-03-23T03:42:45.277
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.initialize(ClassLoaderWeavingAdaptor.java:174)
+
+# Created on 2022-03-23T03:42:45.277
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.initialize(Aj.java:271)
+
+# Created on 2022-03-23T03:42:45.277
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.getWeavingAdaptor(Aj.java:276)
+
+# Created on 2022-03-23T03:42:45.280
+	at org.aspectj.weaver.loadtime.Aj$WeaverContainer.getWeaver(Aj.java:254)
+
+# Created on 2022-03-23T03:42:45.280
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:90)
+
+# Created on 2022-03-23T03:42:45.281
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2022-03-23T03:42:45.281
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+
+# Created on 2022-03-23T03:42:45.283
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2022-03-23T03:42:45.283
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+
+# Created on 2022-03-23T03:42:45.284
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2022-03-23T03:42:45.284
+	at java.base/java.lang.System$2.defineClass(System.java:2303)
+
+# Created on 2022-03-23T03:42:45.285
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:66)
+
+# Created on 2022-03-23T03:42:45.286
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:401)
+
+# Created on 2022-03-23T03:42:45.286
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:395)
+
+# Created on 2022-03-23T03:42:45.287
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+
+# Created on 2022-03-23T03:42:45.287
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:394)
+
+# Created on 2022-03-23T03:42:45.287
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateMethod(MethodAccessorGenerator.java:75)
+
+# Created on 2022-03-23T03:42:45.287
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:63)
+
+# Created on 2022-03-23T03:42:45.289
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2022-03-23T03:42:45.289
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+
+# Created on 2022-03-23T03:42:45.290
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+
+# Created on 2022-03-23T03:42:45.290
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:42:45.291
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:42:45.291
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+
+# Created on 2022-03-23T03:42:45.291
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+
+# Created on 2022-03-23T03:42:45.292
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+
+# Created on 2022-03-23T03:42:45.292
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+
+# Created on 2022-03-23T03:42:45.292
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:42:45.293
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:42:45.293
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+
+# Created on 2022-03-23T03:42:45.294
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+
+# Created on 2022-03-23T03:42:45.294
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4569)
+
+# Created on 2022-03-23T03:42:45.295
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3764)
+
+# Created on 2022-03-23T03:42:45.295
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:52)
+
+# Created on 2022-03-23T03:42:45.296
+	at io.qameta.allure.AllureLifecycle.writeTestCase(AllureLifecycle.java:442)
+
+# Created on 2022-03-23T03:42:45.296
+	at io.qameta.allure.testng.AllureTestNg.onTestSuccess(AllureTestNg.java:343)
+
+# Created on 2022-03-23T03:42:45.297
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+
+# Created on 2022-03-23T03:42:45.297
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:276)
+
+# Created on 2022-03-23T03:42:45.298
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:744)
+
+# Created on 2022-03-23T03:42:45.299
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+
+# Created on 2022-03-23T03:42:45.299
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+
+# Created on 2022-03-23T03:42:45.300
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+
+# Created on 2022-03-23T03:42:45.300
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+
+# Created on 2022-03-23T03:42:45.301
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created on 2022-03-23T03:42:45.301
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created on 2022-03-23T03:42:45.302
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created on 2022-03-23T03:42:45.302
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+
+# Created on 2022-03-23T03:42:45.303
+	at org.testng.TestRunner.run(TestRunner.java:603)
+
+# Created on 2022-03-23T03:42:45.304
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+
+# Created on 2022-03-23T03:42:45.305
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+
+# Created on 2022-03-23T03:42:45.305
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+
+# Created on 2022-03-23T03:42:45.307
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+
+# Created on 2022-03-23T03:42:45.308
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2022-03-23T03:42:45.309
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+
+# Created on 2022-03-23T03:42:45.310
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+
+# Created on 2022-03-23T03:42:45.310
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+
+# Created on 2022-03-23T03:42:45.311
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+
+# Created on 2022-03-23T03:42:45.312
+	at org.testng.TestNG.run(TestNG.java:1060)
+
+# Created on 2022-03-23T03:42:45.312
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2022-03-23T03:42:45.313
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2022-03-23T03:42:45.314
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2022-03-23T03:42:45.314
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2022-03-23T03:42:45.315
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2022-03-23T03:42:45.316
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2022-03-23T03:42:45.317
+
+
+# Created on 2022-03-23T03:42:45.318
+Mar 23, 2022 3:42:45 AM org.aspectj.weaver.tools.Jdk14Trace error
+
+# Created on 2022-03-23T03:42:45.318
+SEVERE: register definition failed
+
+# Created on 2022-03-23T03:42:45.318
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'io.qameta.allure.aspects.StepsAspects': Invalid byte tag in constant pool: 16
+
+# Created on 2022-03-23T03:42:45.318
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+
+# Created on 2022-03-23T03:42:45.318
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+
+# Created on 2022-03-23T03:42:45.326
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+
+# Created on 2022-03-23T03:42:45.326
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:390)
+
+# Created on 2022-03-23T03:42:45.326
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+
+# Created on 2022-03-23T03:42:45.329
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+
+# Created on 2022-03-23T03:42:45.330
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:440)
+
+# Created on 2022-03-23T03:42:45.331
+	at org.aspectj.weaver.World.resolve(World.java:296)
+
+# Created on 2022-03-23T03:42:45.333
+	at org.aspectj.weaver.bcel.BcelWeaver.addLibraryAspect(BcelWeaver.java:160)
+
+# Created on 2022-03-23T03:42:45.333
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerAspects(ClassLoaderWeavingAdaptor.java:460)
+
+# Created on 2022-03-23T03:42:45.337
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerDefinitions(ClassLoaderWeavingAdaptor.java:288)
+
+# Created on 2022-03-23T03:42:45.338
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.initialize(ClassLoaderWeavingAdaptor.java:174)
+
+# Created on 2022-03-23T03:42:45.339
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.initialize(Aj.java:271)
+
+# Created on 2022-03-23T03:42:45.340
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.getWeavingAdaptor(Aj.java:276)
+
+# Created on 2022-03-23T03:42:45.341
+	at org.aspectj.weaver.loadtime.Aj$WeaverContainer.getWeaver(Aj.java:254)
+
+# Created on 2022-03-23T03:42:45.343
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:90)
+
+# Created on 2022-03-23T03:42:45.344
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2022-03-23T03:42:45.345
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+
+# Created on 2022-03-23T03:42:45.346
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2022-03-23T03:42:45.347
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+
+# Created on 2022-03-23T03:42:45.348
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2022-03-23T03:42:45.349
+	at java.base/java.lang.System$2.defineClass(System.java:2303)
+
+# Created on 2022-03-23T03:42:45.349
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:66)
+
+# Created on 2022-03-23T03:42:45.350
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:401)
+
+# Created on 2022-03-23T03:42:45.351
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:395)
+
+# Created on 2022-03-23T03:42:45.352
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+
+# Created on 2022-03-23T03:42:45.352
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:394)
+
+# Created on 2022-03-23T03:42:45.352
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateMethod(MethodAccessorGenerator.java:75)
+
+# Created on 2022-03-23T03:42:45.353
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:63)
+
+# Created on 2022-03-23T03:42:45.355
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2022-03-23T03:42:45.355
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+
+# Created on 2022-03-23T03:42:45.356
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+
+# Created on 2022-03-23T03:42:45.356
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:42:45.358
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:42:45.358
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+
+# Created on 2022-03-23T03:42:45.359
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+
+# Created on 2022-03-23T03:42:45.359
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+
+# Created on 2022-03-23T03:42:45.359
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+
+# Created on 2022-03-23T03:42:45.359
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:42:45.363
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:42:45.363
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+
+# Created on 2022-03-23T03:42:45.364
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+
+# Created on 2022-03-23T03:42:45.364
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4569)
+
+# Created on 2022-03-23T03:42:45.365
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3764)
+
+# Created on 2022-03-23T03:42:45.365
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:52)
+
+# Created on 2022-03-23T03:42:45.367
+	at io.qameta.allure.AllureLifecycle.writeTestCase(AllureLifecycle.java:442)
+
+# Created on 2022-03-23T03:42:45.367
+	at io.qameta.allure.testng.AllureTestNg.onTestSuccess(AllureTestNg.java:343)
+
+# Created on 2022-03-23T03:42:45.367
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+
+# Created on 2022-03-23T03:42:45.368
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:276)
+
+# Created on 2022-03-23T03:42:45.368
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:744)
+
+# Created on 2022-03-23T03:42:45.369
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+
+# Created on 2022-03-23T03:42:45.369
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+
+# Created on 2022-03-23T03:42:45.370
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+
+# Created on 2022-03-23T03:42:45.370
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+
+# Created on 2022-03-23T03:42:45.371
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created on 2022-03-23T03:42:45.371
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created on 2022-03-23T03:42:45.373
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created on 2022-03-23T03:42:45.373
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+
+# Created on 2022-03-23T03:42:45.374
+	at org.testng.TestRunner.run(TestRunner.java:603)
+
+# Created on 2022-03-23T03:42:45.374
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+
+# Created on 2022-03-23T03:42:45.375
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+
+# Created on 2022-03-23T03:42:45.376
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+
+# Created on 2022-03-23T03:42:45.377
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+
+# Created on 2022-03-23T03:42:45.378
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2022-03-23T03:42:45.380
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+
+# Created on 2022-03-23T03:42:45.380
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+
+# Created on 2022-03-23T03:42:45.382
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+
+# Created on 2022-03-23T03:42:45.383
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+
+# Created on 2022-03-23T03:42:45.383
+	at org.testng.TestNG.run(TestNG.java:1060)
+
+# Created on 2022-03-23T03:42:45.383
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2022-03-23T03:42:45.385
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2022-03-23T03:42:45.386
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2022-03-23T03:42:45.387
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2022-03-23T03:42:45.388
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2022-03-23T03:42:45.388
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2022-03-23T03:42:45.390
+
+
+# Created on 2022-03-23T03:42:46.238
+Mar 23, 2022 3:42:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+
+# Created on 2022-03-23T03:42:46.238
+INFO: Detected dialect: W3C
+
+# Created on 2022-03-23T03:43:01.537
+Mar 23, 2022 3:43:01 AM org.aspectj.weaver.tools.Jdk14Trace error
+
+# Created on 2022-03-23T03:43:01.537
+SEVERE: register definition failed
+
+# Created on 2022-03-23T03:43:01.538
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'io.qameta.allure.aspects.StepsAspects': Invalid byte tag in constant pool: 16
+
+# Created on 2022-03-23T03:43:01.538
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+
+# Created on 2022-03-23T03:43:01.538
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+
+# Created on 2022-03-23T03:43:01.538
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+
+# Created on 2022-03-23T03:43:01.538
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:390)
+
+# Created on 2022-03-23T03:43:01.538
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+
+# Created on 2022-03-23T03:43:01.538
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+
+# Created on 2022-03-23T03:43:01.538
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:440)
+
+# Created on 2022-03-23T03:43:01.538
+	at org.aspectj.weaver.World.resolve(World.java:296)
+
+# Created on 2022-03-23T03:43:01.542
+	at org.aspectj.weaver.bcel.BcelWeaver.addLibraryAspect(BcelWeaver.java:160)
+
+# Created on 2022-03-23T03:43:01.542
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerAspects(ClassLoaderWeavingAdaptor.java:460)
+
+# Created on 2022-03-23T03:43:01.543
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerDefinitions(ClassLoaderWeavingAdaptor.java:288)
+
+# Created on 2022-03-23T03:43:01.543
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.initialize(ClassLoaderWeavingAdaptor.java:174)
+
+# Created on 2022-03-23T03:43:01.544
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.initialize(Aj.java:271)
+
+# Created on 2022-03-23T03:43:01.544
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.getWeavingAdaptor(Aj.java:276)
+
+# Created on 2022-03-23T03:43:01.544
+	at org.aspectj.weaver.loadtime.Aj$WeaverContainer.getWeaver(Aj.java:254)
+
+# Created on 2022-03-23T03:43:01.544
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:90)
+
+# Created on 2022-03-23T03:43:01.544
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2022-03-23T03:43:01.547
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+
+# Created on 2022-03-23T03:43:01.547
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2022-03-23T03:43:01.548
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+
+# Created on 2022-03-23T03:43:01.548
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2022-03-23T03:43:01.548
+	at java.base/java.lang.System$2.defineClass(System.java:2303)
+
+# Created on 2022-03-23T03:43:01.549
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:66)
+
+# Created on 2022-03-23T03:43:01.549
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:401)
+
+# Created on 2022-03-23T03:43:01.550
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:395)
+
+# Created on 2022-03-23T03:43:01.550
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+
+# Created on 2022-03-23T03:43:01.551
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:394)
+
+# Created on 2022-03-23T03:43:01.551
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateMethod(MethodAccessorGenerator.java:75)
+
+# Created on 2022-03-23T03:43:01.552
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:63)
+
+# Created on 2022-03-23T03:43:01.552
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2022-03-23T03:43:01.552
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+
+# Created on 2022-03-23T03:43:01.553
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+
+# Created on 2022-03-23T03:43:01.553
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:43:01.554
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:43:01.554
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+
+# Created on 2022-03-23T03:43:01.555
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+
+# Created on 2022-03-23T03:43:01.555
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+
+# Created on 2022-03-23T03:43:01.556
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+
+# Created on 2022-03-23T03:43:01.556
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:43:01.557
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:43:01.557
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+
+# Created on 2022-03-23T03:43:01.558
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+
+# Created on 2022-03-23T03:43:01.558
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4569)
+
+# Created on 2022-03-23T03:43:01.558
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3764)
+
+# Created on 2022-03-23T03:43:01.559
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:52)
+
+# Created on 2022-03-23T03:43:01.559
+	at io.qameta.allure.AllureLifecycle.writeTestCase(AllureLifecycle.java:442)
+
+# Created on 2022-03-23T03:43:01.560
+	at io.qameta.allure.testng.AllureTestNg.onTestSuccess(AllureTestNg.java:343)
+
+# Created on 2022-03-23T03:43:01.560
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+
+# Created on 2022-03-23T03:43:01.560
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:276)
+
+# Created on 2022-03-23T03:43:01.561
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:744)
+
+# Created on 2022-03-23T03:43:01.561
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+
+# Created on 2022-03-23T03:43:01.562
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+
+# Created on 2022-03-23T03:43:01.562
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+
+# Created on 2022-03-23T03:43:01.563
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+
+# Created on 2022-03-23T03:43:01.563
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created on 2022-03-23T03:43:01.564
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created on 2022-03-23T03:43:01.564
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created on 2022-03-23T03:43:01.565
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+
+# Created on 2022-03-23T03:43:01.565
+	at org.testng.TestRunner.run(TestRunner.java:603)
+
+# Created on 2022-03-23T03:43:01.565
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+
+# Created on 2022-03-23T03:43:01.566
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+
+# Created on 2022-03-23T03:43:01.566
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+
+# Created on 2022-03-23T03:43:01.566
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+
+# Created on 2022-03-23T03:43:01.567
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2022-03-23T03:43:01.568
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+
+# Created on 2022-03-23T03:43:01.568
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+
+# Created on 2022-03-23T03:43:01.569
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+
+# Created on 2022-03-23T03:43:01.569
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+
+# Created on 2022-03-23T03:43:01.569
+	at org.testng.TestNG.run(TestNG.java:1060)
+
+# Created on 2022-03-23T03:43:01.570
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2022-03-23T03:43:01.570
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2022-03-23T03:43:01.570
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2022-03-23T03:43:01.571
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2022-03-23T03:43:01.571
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2022-03-23T03:43:01.572
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2022-03-23T03:43:01.572
+
+
+# Created on 2022-03-23T03:43:01.573
+Mar 23, 2022 3:43:01 AM org.aspectj.weaver.tools.Jdk14Trace error
+
+# Created on 2022-03-23T03:43:01.573
+SEVERE: register definition failed
+
+# Created on 2022-03-23T03:43:01.573
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'io.qameta.allure.aspects.StepsAspects': Invalid byte tag in constant pool: 16
+
+# Created on 2022-03-23T03:43:01.573
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+
+# Created on 2022-03-23T03:43:01.574
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+
+# Created on 2022-03-23T03:43:01.575
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+
+# Created on 2022-03-23T03:43:01.575
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:390)
+
+# Created on 2022-03-23T03:43:01.576
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+
+# Created on 2022-03-23T03:43:01.576
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+
+# Created on 2022-03-23T03:43:01.576
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:440)
+
+# Created on 2022-03-23T03:43:01.577
+	at org.aspectj.weaver.World.resolve(World.java:296)
+
+# Created on 2022-03-23T03:43:01.577
+	at org.aspectj.weaver.bcel.BcelWeaver.addLibraryAspect(BcelWeaver.java:160)
+
+# Created on 2022-03-23T03:43:01.578
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerAspects(ClassLoaderWeavingAdaptor.java:460)
+
+# Created on 2022-03-23T03:43:01.578
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerDefinitions(ClassLoaderWeavingAdaptor.java:288)
+
+# Created on 2022-03-23T03:43:01.578
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.initialize(ClassLoaderWeavingAdaptor.java:174)
+
+# Created on 2022-03-23T03:43:01.579
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.initialize(Aj.java:271)
+
+# Created on 2022-03-23T03:43:01.579
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.getWeavingAdaptor(Aj.java:276)
+
+# Created on 2022-03-23T03:43:01.580
+	at org.aspectj.weaver.loadtime.Aj$WeaverContainer.getWeaver(Aj.java:254)
+
+# Created on 2022-03-23T03:43:01.580
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:90)
+
+# Created on 2022-03-23T03:43:01.580
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2022-03-23T03:43:01.581
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+
+# Created on 2022-03-23T03:43:01.581
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2022-03-23T03:43:01.581
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+
+# Created on 2022-03-23T03:43:01.582
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2022-03-23T03:43:01.582
+	at java.base/java.lang.System$2.defineClass(System.java:2303)
+
+# Created on 2022-03-23T03:43:01.583
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:66)
+
+# Created on 2022-03-23T03:43:01.583
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:401)
+
+# Created on 2022-03-23T03:43:01.583
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:395)
+
+# Created on 2022-03-23T03:43:01.584
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+
+# Created on 2022-03-23T03:43:01.584
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:394)
+
+# Created on 2022-03-23T03:43:01.585
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateMethod(MethodAccessorGenerator.java:75)
+
+# Created on 2022-03-23T03:43:01.585
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:63)
+
+# Created on 2022-03-23T03:43:01.585
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2022-03-23T03:43:01.586
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+
+# Created on 2022-03-23T03:43:01.586
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+
+# Created on 2022-03-23T03:43:01.586
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:43:01.587
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:43:01.587
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+
+# Created on 2022-03-23T03:43:01.587
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+
+# Created on 2022-03-23T03:43:01.588
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+
+# Created on 2022-03-23T03:43:01.588
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+
+# Created on 2022-03-23T03:43:01.589
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:43:01.589
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:43:01.589
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+
+# Created on 2022-03-23T03:43:01.590
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+
+# Created on 2022-03-23T03:43:01.590
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4569)
+
+# Created on 2022-03-23T03:43:01.591
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3764)
+
+# Created on 2022-03-23T03:43:01.591
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:52)
+
+# Created on 2022-03-23T03:43:01.591
+	at io.qameta.allure.AllureLifecycle.writeTestCase(AllureLifecycle.java:442)
+
+# Created on 2022-03-23T03:43:01.592
+	at io.qameta.allure.testng.AllureTestNg.onTestSuccess(AllureTestNg.java:343)
+
+# Created on 2022-03-23T03:43:01.592
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+
+# Created on 2022-03-23T03:43:01.592
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:276)
+
+# Created on 2022-03-23T03:43:01.593
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:744)
+
+# Created on 2022-03-23T03:43:01.593
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+
+# Created on 2022-03-23T03:43:01.593
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+
+# Created on 2022-03-23T03:43:01.594
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+
+# Created on 2022-03-23T03:43:01.594
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+
+# Created on 2022-03-23T03:43:01.594
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created on 2022-03-23T03:43:01.595
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created on 2022-03-23T03:43:01.595
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created on 2022-03-23T03:43:01.595
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+
+# Created on 2022-03-23T03:43:01.596
+	at org.testng.TestRunner.run(TestRunner.java:603)
+
+# Created on 2022-03-23T03:43:01.596
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+
+# Created on 2022-03-23T03:43:01.597
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+
+# Created on 2022-03-23T03:43:01.597
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+
+# Created on 2022-03-23T03:43:01.597
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+
+# Created on 2022-03-23T03:43:01.598
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2022-03-23T03:43:01.598
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+
+# Created on 2022-03-23T03:43:01.599
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+
+# Created on 2022-03-23T03:43:01.599
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+
+# Created on 2022-03-23T03:43:01.600
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+
+# Created on 2022-03-23T03:43:01.600
+	at org.testng.TestNG.run(TestNG.java:1060)
+
+# Created on 2022-03-23T03:43:01.601
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2022-03-23T03:43:01.602
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2022-03-23T03:43:01.602
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2022-03-23T03:43:01.603
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2022-03-23T03:43:01.603
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2022-03-23T03:43:01.603
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2022-03-23T03:43:01.603
+
+
+# Created on 2022-03-23T03:43:01.604
+Mar 23, 2022 3:43:01 AM org.aspectj.weaver.tools.Jdk14Trace error
+
+# Created on 2022-03-23T03:43:01.604
+SEVERE: register definition failed
+
+# Created on 2022-03-23T03:43:01.605
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'io.qameta.allure.aspects.StepsAspects': Invalid byte tag in constant pool: 16
+
+# Created on 2022-03-23T03:43:01.605
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+
+# Created on 2022-03-23T03:43:01.606
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+
+# Created on 2022-03-23T03:43:01.606
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+
+# Created on 2022-03-23T03:43:01.607
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:390)
+
+# Created on 2022-03-23T03:43:01.607
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+
+# Created on 2022-03-23T03:43:01.607
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+
+# Created on 2022-03-23T03:43:01.608
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:440)
+
+# Created on 2022-03-23T03:43:01.608
+	at org.aspectj.weaver.World.resolve(World.java:296)
+
+# Created on 2022-03-23T03:43:01.608
+	at org.aspectj.weaver.bcel.BcelWeaver.addLibraryAspect(BcelWeaver.java:160)
+
+# Created on 2022-03-23T03:43:01.609
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerAspects(ClassLoaderWeavingAdaptor.java:460)
+
+# Created on 2022-03-23T03:43:01.609
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerDefinitions(ClassLoaderWeavingAdaptor.java:288)
+
+# Created on 2022-03-23T03:43:01.610
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.initialize(ClassLoaderWeavingAdaptor.java:174)
+
+# Created on 2022-03-23T03:43:01.610
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.initialize(Aj.java:271)
+
+# Created on 2022-03-23T03:43:01.611
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.getWeavingAdaptor(Aj.java:276)
+
+# Created on 2022-03-23T03:43:01.612
+	at org.aspectj.weaver.loadtime.Aj$WeaverContainer.getWeaver(Aj.java:254)
+
+# Created on 2022-03-23T03:43:01.612
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:90)
+
+# Created on 2022-03-23T03:43:01.613
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2022-03-23T03:43:01.613
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+
+# Created on 2022-03-23T03:43:01.613
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2022-03-23T03:43:01.614
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+
+# Created on 2022-03-23T03:43:01.614
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2022-03-23T03:43:01.615
+	at java.base/java.lang.System$2.defineClass(System.java:2303)
+
+# Created on 2022-03-23T03:43:01.615
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:66)
+
+# Created on 2022-03-23T03:43:01.615
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:401)
+
+# Created on 2022-03-23T03:43:01.616
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:395)
+
+# Created on 2022-03-23T03:43:01.616
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+
+# Created on 2022-03-23T03:43:01.617
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:394)
+
+# Created on 2022-03-23T03:43:01.617
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateMethod(MethodAccessorGenerator.java:75)
+
+# Created on 2022-03-23T03:43:01.617
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:63)
+
+# Created on 2022-03-23T03:43:01.618
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2022-03-23T03:43:01.618
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+
+# Created on 2022-03-23T03:43:01.618
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+
+# Created on 2022-03-23T03:43:01.618
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:43:01.619
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:43:01.619
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+
+# Created on 2022-03-23T03:43:01.619
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+
+# Created on 2022-03-23T03:43:01.620
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+
+# Created on 2022-03-23T03:43:01.620
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+
+# Created on 2022-03-23T03:43:01.620
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:43:01.621
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:43:01.621
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+
+# Created on 2022-03-23T03:43:01.621
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+
+# Created on 2022-03-23T03:43:01.622
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4569)
+
+# Created on 2022-03-23T03:43:01.622
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3764)
+
+# Created on 2022-03-23T03:43:01.622
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:52)
+
+# Created on 2022-03-23T03:43:01.623
+	at io.qameta.allure.AllureLifecycle.writeTestCase(AllureLifecycle.java:442)
+
+# Created on 2022-03-23T03:43:01.623
+	at io.qameta.allure.testng.AllureTestNg.onTestSuccess(AllureTestNg.java:343)
+
+# Created on 2022-03-23T03:43:01.623
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+
+# Created on 2022-03-23T03:43:01.624
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:276)
+
+# Created on 2022-03-23T03:43:01.624
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:744)
+
+# Created on 2022-03-23T03:43:01.624
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+
+# Created on 2022-03-23T03:43:01.625
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+
+# Created on 2022-03-23T03:43:01.625
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+
+# Created on 2022-03-23T03:43:01.625
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+
+# Created on 2022-03-23T03:43:01.626
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created on 2022-03-23T03:43:01.626
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created on 2022-03-23T03:43:01.626
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created on 2022-03-23T03:43:01.626
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+
+# Created on 2022-03-23T03:43:01.627
+	at org.testng.TestRunner.run(TestRunner.java:603)
+
+# Created on 2022-03-23T03:43:01.627
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+
+# Created on 2022-03-23T03:43:01.627
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+
+# Created on 2022-03-23T03:43:01.628
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+
+# Created on 2022-03-23T03:43:01.628
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+
+# Created on 2022-03-23T03:43:01.628
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2022-03-23T03:43:01.629
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+
+# Created on 2022-03-23T03:43:01.629
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+
+# Created on 2022-03-23T03:43:01.630
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+
+# Created on 2022-03-23T03:43:01.630
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+
+# Created on 2022-03-23T03:43:01.630
+	at org.testng.TestNG.run(TestNG.java:1060)
+
+# Created on 2022-03-23T03:43:01.631
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2022-03-23T03:43:01.631
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2022-03-23T03:43:01.631
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2022-03-23T03:43:01.632
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2022-03-23T03:43:01.633
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2022-03-23T03:43:01.633
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2022-03-23T03:43:01.634
+
+
+# Created on 2022-03-23T03:43:01.634
+Mar 23, 2022 3:43:01 AM org.aspectj.weaver.tools.Jdk14Trace error
+
+# Created on 2022-03-23T03:43:01.634
+SEVERE: register definition failed
+
+# Created on 2022-03-23T03:43:01.634
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'io.qameta.allure.aspects.StepsAspects': Invalid byte tag in constant pool: 16
+
+# Created on 2022-03-23T03:43:01.635
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+
+# Created on 2022-03-23T03:43:01.635
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+
+# Created on 2022-03-23T03:43:01.635
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+
+# Created on 2022-03-23T03:43:01.636
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:390)
+
+# Created on 2022-03-23T03:43:01.636
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+
+# Created on 2022-03-23T03:43:01.636
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+
+# Created on 2022-03-23T03:43:01.637
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:440)
+
+# Created on 2022-03-23T03:43:01.637
+	at org.aspectj.weaver.World.resolve(World.java:296)
+
+# Created on 2022-03-23T03:43:01.637
+	at org.aspectj.weaver.bcel.BcelWeaver.addLibraryAspect(BcelWeaver.java:160)
+
+# Created on 2022-03-23T03:43:01.637
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerAspects(ClassLoaderWeavingAdaptor.java:460)
+
+# Created on 2022-03-23T03:43:01.638
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.registerDefinitions(ClassLoaderWeavingAdaptor.java:288)
+
+# Created on 2022-03-23T03:43:01.639
+	at org.aspectj.weaver.loadtime.ClassLoaderWeavingAdaptor.initialize(ClassLoaderWeavingAdaptor.java:174)
+
+# Created on 2022-03-23T03:43:01.639
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.initialize(Aj.java:271)
+
+# Created on 2022-03-23T03:43:01.640
+	at org.aspectj.weaver.loadtime.Aj$ExplicitlyInitializedClassLoaderWeavingAdaptor.getWeavingAdaptor(Aj.java:276)
+
+# Created on 2022-03-23T03:43:01.640
+	at org.aspectj.weaver.loadtime.Aj$WeaverContainer.getWeaver(Aj.java:254)
+
+# Created on 2022-03-23T03:43:01.640
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:90)
+
+# Created on 2022-03-23T03:43:01.641
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2022-03-23T03:43:01.641
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+
+# Created on 2022-03-23T03:43:01.642
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2022-03-23T03:43:01.642
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+
+# Created on 2022-03-23T03:43:01.643
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2022-03-23T03:43:01.643
+	at java.base/java.lang.System$2.defineClass(System.java:2303)
+
+# Created on 2022-03-23T03:43:01.643
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:66)
+
+# Created on 2022-03-23T03:43:01.644
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:401)
+
+# Created on 2022-03-23T03:43:01.644
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:395)
+
+# Created on 2022-03-23T03:43:01.645
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+
+# Created on 2022-03-23T03:43:01.645
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:394)
+
+# Created on 2022-03-23T03:43:01.645
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateMethod(MethodAccessorGenerator.java:75)
+
+# Created on 2022-03-23T03:43:01.646
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:63)
+
+# Created on 2022-03-23T03:43:01.646
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2022-03-23T03:43:01.646
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+
+# Created on 2022-03-23T03:43:01.647
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:689)
+
+# Created on 2022-03-23T03:43:01.647
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:43:01.648
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:43:01.648
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+
+# Created on 2022-03-23T03:43:01.648
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+
+# Created on 2022-03-23T03:43:01.649
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+
+# Created on 2022-03-23T03:43:01.649
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+
+# Created on 2022-03-23T03:43:01.650
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+
+# Created on 2022-03-23T03:43:01.651
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+
+# Created on 2022-03-23T03:43:01.651
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+
+# Created on 2022-03-23T03:43:01.652
+	at io.qameta.allure.internal.shadowed.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+
+# Created on 2022-03-23T03:43:01.652
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4569)
+
+# Created on 2022-03-23T03:43:01.652
+	at io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3764)
+
+# Created on 2022-03-23T03:43:01.653
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:52)
+
+# Created on 2022-03-23T03:43:01.653
+	at io.qameta.allure.AllureLifecycle.writeTestCase(AllureLifecycle.java:442)
+
+# Created on 2022-03-23T03:43:01.654
+	at io.qameta.allure.testng.AllureTestNg.onTestSuccess(AllureTestNg.java:343)
+
+# Created on 2022-03-23T03:43:01.654
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+
+# Created on 2022-03-23T03:43:01.654
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:276)
+
+# Created on 2022-03-23T03:43:01.655
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:744)
+
+# Created on 2022-03-23T03:43:01.655
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+
+# Created on 2022-03-23T03:43:01.655
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+
+# Created on 2022-03-23T03:43:01.656
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+
+# Created on 2022-03-23T03:43:01.656
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+
+# Created on 2022-03-23T03:43:01.656
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+
+# Created on 2022-03-23T03:43:01.657
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+
+# Created on 2022-03-23T03:43:01.657
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+# Created on 2022-03-23T03:43:01.657
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+
+# Created on 2022-03-23T03:43:01.658
+	at org.testng.TestRunner.run(TestRunner.java:603)
+
+# Created on 2022-03-23T03:43:01.658
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+
+# Created on 2022-03-23T03:43:01.659
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+
+# Created on 2022-03-23T03:43:01.659
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+
+# Created on 2022-03-23T03:43:01.660
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+
+# Created on 2022-03-23T03:43:01.661
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2022-03-23T03:43:01.661
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+
+# Created on 2022-03-23T03:43:01.661
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+
+# Created on 2022-03-23T03:43:01.662
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+
+# Created on 2022-03-23T03:43:01.662
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+
+# Created on 2022-03-23T03:43:01.662
+	at org.testng.TestNG.run(TestNG.java:1060)
+
+# Created on 2022-03-23T03:43:01.663
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2022-03-23T03:43:01.663
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2022-03-23T03:43:01.664
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2022-03-23T03:43:01.664
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2022-03-23T03:43:01.664
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2022-03-23T03:43:01.665
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2022-03-23T03:43:01.665
+
+

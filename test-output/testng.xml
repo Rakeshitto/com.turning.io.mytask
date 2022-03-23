@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite">
+    <test name="Test Scenarios">
+
+        <parameter name="username" value="admin"/>
+        <parameter name="password" value="admin123"/>
+        <parameter name="firstname" value="Drek"/>
+        <parameter name="lastname" value="Matt"/>
+        <parameter name="email" value="Drekm@gmail.com"/>
+        <parameter name="contactno" value="5623452898"/>
+        <parameter name="cvpath" value="D:\\DeravResume.txt"/>
+        <classes>
+            <class name="Objectrep.scenario1AddCandidate">
+                <methods>
+                    <include name="addCandidate" />
+                    <include name="logout"/>
+                </methods>
+            </class>
+
+            <class name="Objectrep.scenario2VerifyCandidate">
+                <methods>
+                    <include name="beforeTest"/>
+                    <include name="verifyCandidate" />
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
