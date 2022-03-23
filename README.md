@@ -10,11 +10,11 @@
  
 This project allows you to run test scenarios which are present under src/test/java. Below are the instructions of how to run this project on your local
 
-- Clone this project to your local by git clone https://github.com/Rakeshitto/com.turning.io.mytask
+- Clone this project to your local by git clone https://github.com/Rakeshitto/com.turning.io.mytask.git
 - Open the project using an IDE (IntelliJ preferably)
 - Before running the project make sure you have already set up allure reports on your machine. If not so, follow instructions on        
   https://docs.qameta.io/allure/#_get_started
-- Make sure project does not show any compilation errors. Since this is a Maven project, make sure you have maven installed on your machine and also on your 
+- Make sure project does not show any compilation errors. Since this is a Maven project, make sure you have maven installed on your machine and also set your 
   path(Environment variables)
 - The browser is set to 'headless'. To make the browser visible, change the below code under Utilities.launchPage()
      Existing:  <ChromeOptions options = new ChromeOptions();
@@ -25,7 +25,7 @@ This project allows you to run test scenarios which are present under src/test/j
   
 - Open a terminal (in case of IntelliJ, IDE itself has a terminal)
 - Change the directory to the project path
-- Run the command mvn clean test
+- Run the command >mvn clean test
 - The project has ability to read parameters from command line. To do so, you need to enter parameters as below
    ** >mvn clean test -Dusername=<username> -Dpassword=<password> -Dcvpath=<path\\cv.pdf>**
 - Once the tests are executed successfully, go to the terminal and enter the command >allure scope <path of target\allure-results>
